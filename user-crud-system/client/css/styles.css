@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 25px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.25);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#btn-save {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#btn-cancel {
+    background-color: #bdc3c7;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    background: #f1f3f5;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f9fafb;
+    transition: background 0.2s;
+}
+
+#message {
+    padding: 8px;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+
+.msg-error {
+    padding: 8px;
+    margin-top: 12px;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    background: #ffa7a7;
+    color: #b00000;
+}
+
+.msg-success {
+    padding: 8px;
+    margin-top: 12px;
+    border: 1px solid #00c853;
+    border-radius: 8px;
+    background: #beffc1;
+    color: #004c04;
+}
+
+.actions-cell {
+    display: flex;
+    gap: 8px;
+}
+
+button[data-action="edit"] {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #4262ff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button[data-action="delete"] {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #e74c3c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button[data-action="edit"]:hover,
+
+button[data-action="delete"]:hover {
+    opacity: 0.9;
+}
+
+.empty-state {
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}

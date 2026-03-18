@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Registration</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>User Registration and Management System</h1>
+        </header>
+        <main>
+            <section>
+                <form id="user-form">
+                    <input id="name" type="text" placeholder="Name">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="age" type="number" placeholder="Age">
+                    <input id="role" type="text" placeholder="Role">
+                    <div class="actions">
+                        <button id="btn-save" type="submit">Save</button>
+                        <button id="btn-cancel" type="button" class="hidden">Cancel</button>
+                    </div>
+                    <div id="message"></div>
+                </form>
+            </section>
+            <section>
+                <h2>Search user</h2>
+                <input id="search" type="text" placeholder="Search by name, email, role, or age">
+            </section>
+            <section>
+                <h2>Registered users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-list"></tbody>
+                </table>
+            </section>
+        </main>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
